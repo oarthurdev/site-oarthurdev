@@ -1,26 +1,24 @@
 <template>
   <v-app>
-    <Menu />
-      <v-content>
-        <Home />
-      </v-content>
+    <v-container>
+      <Menu />
+      <router-view></router-view>
+    </v-container>
   </v-app>
 </template>
 
 <script>
 import Menu from './components/Menu'
-import Home from './views/Home'
 
 export default {
   name: 'App',
   components: {
-    Menu,
-    Home
-  },
-  data () {
-    return {
-      //
-    }
+    Menu
   }
 }
 </script>
+<style lang="scss">
+a{
+  text-decoration: none;
+}
+</style>

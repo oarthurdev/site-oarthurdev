@@ -1,17 +1,15 @@
 <template>
-<div>
-  <Menu />
-  <v-container>
-  </v-container>
-</div>
+<v-container grid-list-md text-xs-center>
+  <v-layout row wrap>
+    <v-flex xs12>
+      <b>Home Page</b>
+    </v-flex>
+  </v-layout>
+</v-container>
 </template>
 
 <script>
-import Menu from '../components/Menu'
-
 export default {
-  components: {
-    Menu
-  }
+  name: 'Home'
 }
 </script>
